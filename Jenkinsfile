@@ -17,7 +17,7 @@ pipeline {
         stage('SonarQube Analysis') {
             steps {
                  script {
-                     def mvnHome = tool 'Maven 3.9.8' //
+                     def mvnHome = tool 'Maven 3.9.9' //
                      withSonarQubeEnv('SonarQ') {
                          sh "${mvnHome}/bin/mvn clean verify sonar:sonar - Dsonar.projectKey=Vulnado -Dsonar.projectName='Vulnado'"
                      }
