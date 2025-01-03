@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('checkout') {
             steps {
-                git 'https://github.com/Cyber-cicco/sonarqube'
+                git 'https://github.com/ScaleSec/vulnado.git'
             }
         }
     }
