@@ -4,6 +4,11 @@ pipeline {
         maven 'Maven 3.9.9'
     }
     stages {
+        stage('Test') {
+            steps {
+                sh 'bonjour'
+            }
+        }
         stage('Checkout') {
             steps {
                 git 'https://github.com/ScaleSec/vulnado.git'
